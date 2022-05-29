@@ -1,0 +1,330 @@
+*{margin: 0 auto; padding: 0; box-sizing: border-box}
+body{
+    background-attachment: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0; 
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
+
+    /* padding-bottom: 50px; */
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1280px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 484px 646px;
+}
+
+.outer{
+    max-width: 1280px;
+    transform: translateZ(30px);
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+.icon-20pt::before{
+    margin: 10px;
+    font-size: 20pt;
+}
+.icon-15pt::before{
+    font-size: 15pt;
+    color: #000;
+    margin-right: 10px;
+}
+.title{
+    font-size: 42px; font-family: 'Open Sans';
+    font-weight: 700; border-bottom: 4px solid #e1e1e1;
+    padding-bottom: 35px; padding-top: 65px;
+    margin-bottom: 35px;
+}
+
+/* CLASS HEADER */
+.header{
+    padding-top: 71px;
+    height: 160px;
+    background-color: #fff;
+}
+.header > .left__block{
+    background-color: #fecb00; width: 484px;
+    display: flex; justify-content: center; align-items: center;
+}
+.header .items{
+    font-size: 21px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.header .items_{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+}
+.header > .right__block{
+    width: 646px; display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* CLASS GENERAL */
+.general{
+    padding-top: 0;
+    padding-bottom: 0;
+
+    height: 464px;
+    background-color: #222130;
+}
+.general > .left__block{
+    width: 484px; background-image: url("https://sun9-70.userapi.com/s/v1/if2/G73Q2xTVEVsv-IqkC8MpPcH5GVvKsxB9iZu4DEM0gyNvWnFuSUEXyNQyv_k-xZW2SLulaNH76nzfpoKix82SBKEh.jpg?size=484x604&quality=95&type=album");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.general > .right__block{
+    margin: auto 30px;
+}
+.general .fullname{
+    font-family: 'Open Sans'; font-size: 75px;
+    border-bottom: 4px solid #fecb00;
+    color: #fff; font-weight: 400; 
+    margin-bottom: 30px;
+}
+.general .fullname > .first__name{
+    font-weight: 700;
+}
+
+.general .profession > span{
+    color: #fff; font-size: 25px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.general .about__me > p{
+    color: #fff; margin-top: 30px;
+    font-size: 19px; font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+/* CLASS WORKS */
+.works{
+    background-color: #fff;
+    margin: 0 auto;
+    /* padding-top: 50px; */
+    padding-left: 75px;
+    padding-right: 0;
+}
+
+.works .portition{
+    display: flex; justify-content: space-between; align-items: center;  
+}
+.works .portition > div{
+    font-size: 20px; font-family: 'Open Sans';
+    font-weight: 500; color: #e1e1e1;
+    padding: 100px 50px;
+}
+
+/* CLASS FOOTER */
+.footer{
+    background-color: white;
+    padding-bottom: 71px;
+    grid-template-columns: 484px 721px;
+}
+.footer > .reference{
+    background-color: #fecb00; 
+    width: 484px;
+    padding-left: 75px;
+    padding-right: 0;
+    padding-bottom: 30px;
+}
+
+.footer > .reference > .items {
+    /* outline: 1px dashed rgba(0,0,0,.2); */
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 400px;
+}
+.footer > .reference > .items > .item{
+    margin-bottom: 35px;
+}
+.footer > .reference > .items > .item > .profession__fullname{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.footer > .reference > .items > .item > .profession__description,
+.footer > .reference > .items > .item > .studying__time
+{
+    font-size: 21px;
+    line-height: 35px;
+}
+.footer > .reference > .items > .item > .contacts > a{
+    text-decoration: none;
+}
+._1 > .profession__fullname::before{content: 'ИБ'}
+._2 > .profession__fullname::before{content: 'СисАдмин'}
+._3 > .profession__fullname::before{content: 'Python Developer'}
+/* 
+var content = window.getComputedStyle(document.querySelector('#tool'),':before').content;
+var content = window.getComputedStyle(document.querySelector('#tool'),':after').getPropertyValue('content');
+*/
+._1 > .profession__fullname::before,
+._2 > .profession__fullname::before,
+._3 > .profession__fullname::before
+{
+    background-color: #222130;
+    font-size: 16px; 
+    padding: 10px;
+    color: white; 
+    border-radius: 10px; 
+    margin-right: 10px;
+}
+.footer > .right__block{
+    width: 721px;
+    height: calc(inherit - 30px);
+    padding-left: 75px;
+    padding-right: 0;
+}
+.footer > .right__block > .skills{
+    display: flex; justify-content: space-between; align-items: flex-start;
+    height: 400px; 
+    width: 611px; margin-right: 75px;
+
+    /* outline: 1px dashed rgba(0,0,0,.2); */
+}
+.footer > .right__block > .skills > .skills{
+    background-color: #424242;
+    height: 400px;
+    width: 275px;
+    margin-right: 61px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+}
+.footer > .right__block > .skills > .skills > .title__skills > h1{
+    text-shadow: 0 0  5px black;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer > .right__block > .skills > .skills > .title__skills{
+    display: flex; justify-content: center; align-items: center;
+    height: 100px; width: 275px;
+}
+.footer > .right__block > .skills > .skills > .item > div{
+    width: 275px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.footer > .right__block > .skills > .skills > .item > div > .name,
+.footer > .right__block > .skills > .skills > .item > div > .percent{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer > .right__block > .skills > .skills > .item > div.progressbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+.footer > .right__block > .skills > .skills > .item{
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+}
+.footer > .right__block > .skills > .skills > .item > div.progressbar > .outer{
+    background-color: black;
+    height: 7px;
+    max-width: inherit;
+    width: 255px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    display: flex; justify-content: flex-start; align-items: center;
+
+}
+.footer > .right__block > .skills > .skills > .item > div.progressbar > .outer > .inner{
+    background-color: white;
+    height: 5px;
+    max-width: 253px;
+    border-radius: 2px;
+
+    box-shadow: 0 0 10px white;
+}
+.footer > .right__block > .skills > .skills > .item:hover,
+.footer > .right__block > .skills > .skills > .item.active{
+    background-color: rgba(42, 42, 42, .4);
+    cursor: pointer;
+}
+.footer > .right__block > .skills > .more{
+    background-color: #424242;
+    height: 400px;
+    width: 275px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 10px;
+    color: white;
+}
+
+.button__block{
+    /* outline: 1px dashed rgba(0,0,0,.2); */
+
+    display: flex;
+    justify-content: space-between;                                                                                                             
+}
+#skills__button{ position: relative; bottom: 95px; }
+#skills__button > button + button{
+    margin-left: 20px;
+}
+#reference__button > button.icon-arrow-up2{
+    position: relative;
+    left: 20px; bottom: 240px;
+
+    padding: 20px 10px;
+}
+#reference__button > button.icon-arrow-down2{
+    position: relative;
+    left: -25px; bottom: 160px;
+
+    padding: 20px 10px;
+}
+
+.button__container{ margin: 0 }
+.button__container > button{
+    background-color: #222130;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16pt;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.button__container > button:hover{
+    background-color: rgba(42, 42, 42, .8);
+    cursor: pointer;
+}
+.button__container > button:active{
+    text-shadow: 0 0 30px white;
+}
+.button__container > button:disabled{
+    background-color: rgba(42, 42, 42, .2);
+    text-shadow: none;
+    cursor: not-allowed;
+}
