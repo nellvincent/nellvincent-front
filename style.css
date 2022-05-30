@@ -258,8 +258,9 @@ var content = window.getComputedStyle(document.querySelector('#tool'),':after').
 .footer > .right__block > .skills > .skills > .item > div.progressbar > .outer > .inner{
     background-color: white;
     height: 5px;
-    max-width: 253px;
+    max-width: 255px;
     border-radius: 2px;
+    margin: 0;
 
     box-shadow: 0 0 10px white;
 }
